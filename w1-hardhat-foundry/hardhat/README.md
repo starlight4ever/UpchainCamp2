@@ -38,3 +38,9 @@ npx hardhat run scripts/deploy.js
     https://testnet.snowtrace.io/address/0xdbB268002D37632B43137c843f95b226B4676c2F#code
 
   -->
+
+```
+-- hardhat中文文档
+https://learnblockchain.cn/docs/hardhat/getting-started/
+
+```

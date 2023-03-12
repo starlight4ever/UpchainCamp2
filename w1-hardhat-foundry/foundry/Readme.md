@@ -44,4 +44,8 @@ anvil -m "test test test test test test test test test test test junk"
 
 ```
 
+```
+-- foundry中文文档
+https://learnblockchain.cn/docs/foundry/i18n/zh/getting-started/installation.html
 
+```
