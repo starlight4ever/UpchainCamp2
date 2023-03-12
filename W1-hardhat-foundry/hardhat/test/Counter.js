@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat/internal/lib/hardhat-lib");
 
-let counter;
+let counter, otherAccount;
 
 describe("Counter", function () {
   async function init() {
