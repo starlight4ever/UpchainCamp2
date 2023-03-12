@@ -2,17 +2,11 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Script.sol";
-import "./BaseScript.s.sol";
-import "../src/Counter.sol";
 
-// 部署脚本
-contract CounterScript is BaseScript {
+contract CounterScript is Script {
+    function setUp() public {}
 
-   function run() public broadcaster {
-        Counter c = new Counter();
-
-        console.log("Counter deployed on %s", address(c));
-        saveContract("local", "Counter" , address(c));
+    function run() public {
+        vm.broadcast();
     }
-
 }
