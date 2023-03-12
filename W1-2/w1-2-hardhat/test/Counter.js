@@ -1,4 +1,5 @@
 const { expect } = require("chai");
+const { ethers } = require("hardhat/internal/lib/hardhat-lib");
 
 let counter;
 
@@ -24,6 +25,17 @@ describe("Counter", function () {
     let tx = await counter.count();
     await tx.wait();
     expect(await counter.counter()).to.equal(1);
+  });
+
+  it("other call", async function () {
+    const [owner, otherAccount] = await ethers.getSigners();
+
+    let add = counter.connect(otherAccount).count();
+
+    await expect(add).eventually.to.rejectedWith(
+      Error,
+      "this function is restricted to the owner"
+    );
   });
 
 });

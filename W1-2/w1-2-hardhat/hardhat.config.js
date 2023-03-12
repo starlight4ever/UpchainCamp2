@@ -6,7 +6,7 @@ dotenv.config({ path: "./.env" })
 
 const mnemonic = process.env.MNEMONIC
 const scankey = process.env.ETHERSCAN_API_KEY
-// const privateKey = process.env.PRIVATEKEY
+const privateKey = process.env.PRIVATEKEY
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -37,8 +37,9 @@ module.exports = {
     fuji:{
       url: "https://api.avax-test.network/ext/C/rpc",
       accounts:{
-        mnemonic: mnemonic,
+        mnemonic: mnemonic, //助记词部署
       },
+      // accounts: [privateKey], //私钥部署
       chainId: 43113,
       live: true,
       saveDeployments: true,
