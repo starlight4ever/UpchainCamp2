@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "student",
+						"type": "address"
+					}
+				],
+				"name": "setScore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"w2-2/Teacher.sol": "Teacher"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"w2-2/Score.sol": {
+			"keccak256": "0x798e4777f4c5e209a855cda70a4ab5845cae46ea3695ce26f6f2ce7da087598e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://5f8b8291edc519d5575a962caf862f828bd4b297d41f571898d82b1579d34f1f",
+				"dweb:/ipfs/QmWbAL5EFnGRWGJSEWDyo74KLhQ9ZgFWQA4T8BVMMyZMPu"
+			]
+		},
+		"w2-2/Teacher.sol": {
+			"keccak256": "0x46654508ea2ff21e5fca7602f609efbe84d72fad27df153ce32c1fcaac2fbfb3",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://4f99ece2fdc1671aac754584046deb67dbb79133c79dc7681e465585da96ea71",
+				"dweb:/ipfs/QmYFFuqUf8KmndMyzmpg68npiSr55kg1kYDdHudrCE7Npw"
+			]
+		}
+	},
+	"version": 1
+}
