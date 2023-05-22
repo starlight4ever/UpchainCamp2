@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -11,8 +11,27 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					}
+				],
+				"name": "getScore",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "createTeacher",
+				"name": "getTeacher",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -26,12 +45,49 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "scoreMap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "score",
 						"type": "uint256"
 					}
 				],
 				"name": "setScore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "t",
+						"type": "address"
+					}
+				],
+				"name": "setTeacher",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -52,7 +108,7 @@
 		"compilationTarget": {
 			"w2-2/Score.sol": "Score"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -65,19 +121,11 @@
 	},
 	"sources": {
 		"w2-2/Score.sol": {
-			"keccak256": "0x798e4777f4c5e209a855cda70a4ab5845cae46ea3695ce26f6f2ce7da087598e",
+			"keccak256": "0x2076107cdd35eba69a1437526279c8436e655128a22a1fceeca08d64b1ba3468",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://5f8b8291edc519d5575a962caf862f828bd4b297d41f571898d82b1579d34f1f",
-				"dweb:/ipfs/QmWbAL5EFnGRWGJSEWDyo74KLhQ9ZgFWQA4T8BVMMyZMPu"
-			]
-		},
-		"w2-2/Teacher.sol": {
-			"keccak256": "0x46654508ea2ff21e5fca7602f609efbe84d72fad27df153ce32c1fcaac2fbfb3",
-			"license": "UNLICENSED",
-			"urls": [
-				"bzz-raw://4f99ece2fdc1671aac754584046deb67dbb79133c79dc7681e465585da96ea71",
-				"dweb:/ipfs/QmYFFuqUf8KmndMyzmpg68npiSr55kg1kYDdHudrCE7Npw"
+				"bzz-raw://a08957c1f2d59dc8f763062d1ea0436c00d464840898612032fda1ba193a1fba",
+				"dweb:/ipfs/QmRHF9BWidtYb9B2iJqeJBkw8usecgp9qEa6LLQ8RefgX4"
 			]
 		}
 	},

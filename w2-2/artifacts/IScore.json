@@ -49,12 +49,17 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"setScore(uint256)": "422beeba"
+			"setScore(address,uint256)": "ee0fcc75"
 		}
 	},
 	"abi": [
 		{
 			"inputs": [
+				{
+					"internalType": "address",
+					"name": "studentAddress",
+					"type": "address"
+				},
 				{
 					"internalType": "uint256",
 					"name": "score",
