@@ -2,13 +2,13 @@
 
 pragma solidity ^0.8.13;
 
-import "@openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+import "../lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
 
 contract MyERC20 is ERC20 {
 
-    constructor() ERC20(unicode"集训营二期", "CAMP2") {
-        _mint(msg.sender, 10000 * 10 ** 18);
+    constructor() ERC20(unicode"王星光的ERC20", "WXG") {
+        _mint(msg.sender, 10000);
     }
 
 
